@@ -36,3 +36,12 @@ Remove
 ```csharp
 salmons.Remove("coho");
 ```
+
+
+Interfaces
+se declara 
+[public] {tipo de retorno} {nombre del método}([parámetros]);
+```csharp
+public int CalcularPromedio(int nota1, int nota2, int nota3);
+```
+

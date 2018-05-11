@@ -8,7 +8,9 @@ Documentacion basica c#
 GitHub.com utiliza su propia versión de sintaxis Markdown que provee un
 conjunto de características adicionales, muchas de ellas para hacer más fácil
 trabajar con el contenido en GitHub.com
-
+```csharp
+int x = 10;
+```
 
 
 ## Lista  ##
@@ -28,4 +30,9 @@ foreach (var xLocalVariable in NombreString)
 {
     Console.Write(xLocalVariable + " ");
 }
+```
+Atributos:
+Remove
+```csharp
+salmons.Remove("coho");
 ```

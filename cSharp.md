@@ -39,9 +39,74 @@ salmons.Remove("coho");
 
 
 Interfaces
-se declara 
+Herencia de una clase para implementar sus metodos
+
 [public] {tipo de retorno} {nombre del método}([parámetros]);
 ```csharp
 public int CalcularPromedio(int nota1, int nota2, int nota3);
 ```
+
+
+
+
+
+```csharp
+namespace _Debug
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            IManejoDeDatos operacion = new  Cliente();
+            operacion.ActualisarRegistro(2548);
+            operacion.BuscarRegistro(0144);
+            Console.ReadLine();
+        }
+    }
+}
+
+namespace _Debug
+{
+    public class Cliente : IManejoDeDatos
+    {
+        public void ActualisarRegistro(int idcliente)
+        {
+            // Logica Para actualizar el registro 
+            // enviado por paramaetro
+        }
+
+        public void BuscarRegistro(int idcliente)
+        {
+            // Logica Para Buscar los datos del registro 
+            // enviado por paramaetro
+        }
+
+        public void EliminarRegistro(int idcliente)
+        {
+            // Logica Para eliminar el registro 
+            // enviado por paramaetro
+        }
+    }
+}
+
+namespace _Debug
+{
+    public interface IManejoDeDatos
+    {
+        void ActualisarRegistro(int idcliente);
+        void EliminarRegistro(int idcliente);
+        void BuscarRegistro(int idcliente);
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
 

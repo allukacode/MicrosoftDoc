@@ -7,7 +7,7 @@ Para usar Intellisense escribir sql.
 ### Indice
 ------
 
-### Transact-SQL
+Transact-SQL
 ------
 Mostrar todas Las base de datos de la Instancia SQL Server.
 ```sql

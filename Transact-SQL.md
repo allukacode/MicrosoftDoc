@@ -1,6 +1,6 @@
 # Documentacion Transact-SQL
 
-Documentacion basica Transact-SQL
+Documentacion basica Transact-SQL.
 Ejecutar Sentencias de codigo seleccionado con Control + Shift + E
 Para usar Intellisense escribir sql.
 
@@ -17,7 +17,7 @@ SELECT Name from sys.Databases;
 
 Seleccionar Base de datos existente
 ```sql
-use ExampleDatabaseName
+USE ExampleDatabaseName
 ```
 
 Crear una nueva Base de datos

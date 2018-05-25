@@ -6,21 +6,21 @@ Para usar Intellisense escribir sql.
 ### Indice
 
 Mostrar todas Las base de datos de la Instancia SQL Server.
-```
+```sql
 SELECT Name from sys.Databases;
 ```
 
 Seleccionar Base de datos existente
-```
-use NombreDeLaBaseDeDatos
+```sql
+use ExampleDatabaseName
 ```
 
 Crear una nueva Base de datos
-```
-CREATE DATABASE NameDataBaseExample
+```sql
+CREATE DATABASE ExampleNameDataBase
 ```
 
 Some text
-```
+```sql
 Code block
 ```

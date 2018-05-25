@@ -17,16 +17,16 @@ SELECT Name from sys.Databases;
 
 Seleccionar Base de datos existente
 ```sql
-USE ExampleDatabaseName
+USE ExampleDatabaseName;
 ```
 
 Crear una nueva Base de datos
 ```sql
-CREATE DATABASE ExampleNameDataBase
+CREATE DATABASE ExampleNameDataBase;
 ```
 
 
 Borrar Base de datos
 ```sql
-DROP DATABASE ExampleNameDataBase
+DROP DATABASE ExampleNameDataBase;
 ```

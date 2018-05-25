@@ -1,0 +1,3 @@
+SELECT Name from sys.Databases;
+CREATE DATABASE MyFirstDB
+DROP DATABASE MyFirstDB

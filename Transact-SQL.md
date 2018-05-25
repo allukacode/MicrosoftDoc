@@ -25,12 +25,8 @@ Crear una nueva Base de datos
 CREATE DATABASE ExampleNameDataBase
 ```
 
-qdqwdqwdqw
-======
-Some text
-```sql
-Code block
-```
 
-======
-dqwdqwdqwd
+Borrar Base de datos
+```sql
+DROP DATABASE ExampleNameDataBase
+```

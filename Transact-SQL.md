@@ -5,25 +5,22 @@ Para usar Intellisense escribir sql.
 
 ### Indice
 
-```sql
+Mostrar todas Las base de datos de la Instancia SQL Server.
+```
 SELECT Name from sys.Databases;
 ```
 
-
-
-
-/* Seleccionar Base de datos*/
+Seleccionar Base de datos existente
+```
 use NombreDeLaBaseDeDatos
--- Create a new database called 'DatabaseName'
--- Connect to the 'master' database to run this snippet
-USE master
-GO
--- Create the new database if it does not exist already
-IF NOT EXISTS (
-    SELECT name
-        FROM sys.databases
-        WHERE name = N'ControlDeCondominios'
-)
-CREATE DATABASE ControlDeCondominios
-GO
-Asdasd**
+```
+
+Crear una nueva Base de datos
+```
+CREATE DATABASE NameDataBaseExample
+```
+
+Some text
+```
+Code block
+```

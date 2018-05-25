@@ -1,12 +1,17 @@
+# Documentacion Transact-SQL
+Documentacion basica Transact-SQL
+Ejecutar Sentencias de codigo seleccionado con Control + Shift + E
+Para usar Intellisense escribir sql.
 
-/* 
-    Documentacion 
-    Para usar Intellisense escribir sql
-    Ejecutar Sentencias de codigo seleccionado con Control + Shift + E
-*/
-/**/
-/* Mostrar Todas Las Base de datos*/
+### Indice
+
+```sql
 SELECT Name from sys.Databases;
+```
+
+
+
+
 /* Seleccionar Base de datos*/
 use NombreDeLaBaseDeDatos
 -- Create a new database called 'DatabaseName'

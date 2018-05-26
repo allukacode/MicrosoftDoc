@@ -41,6 +41,38 @@ Borrar Base de datos
 DROP DATABASE ExampleNameDataBase;
 ```
 
+Crear Tabla
+```sql
+CREATE TABLE Empleado (
+    EmpleadoID int,
+    EmpleadoNombre varchar(255),
+    EmpleadoApellido varchar(255),
+    Address varchar(255),
+    City varchar(255) 
+);
+```
+
+Agregar Columna a la tabla
+```sql
+ALTER TABLE Empleado
+ADD column_name varchar(255);
+```
+
+Eliminar Columna a la tabla
+```sql
+ALTER TABLE Empleado
+DROP COLUMN column_name;
+```
+
+Cambiar el tipo de dato de una columna en una tabla******
+```sql
+ALTER TABLE Empleado
+ALTER COLUMN column_name datatype;
+```
+
+
+
+
 
 
 

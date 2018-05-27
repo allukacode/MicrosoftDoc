@@ -1,6 +1,6 @@
 SELECT Name from sys.Databases;
 CREATE DATABASE Run;
-use Run;
+use DigitalShop;
 
 
 CREATE TABLE Empleado (
@@ -11,8 +11,13 @@ CREATE TABLE Empleado (
     City varchar(255) 
 );
 
-CREATE TABLE NameNewTable AS
-   SELECT EmpleadoID, EmpleadoNombre,EmpleadoApellido, Address, City
-   FROM Empleado;
+ALTER TABLE Empleado
+DROP COLUMN column_name;
+select * from INFORMATION_SCHEMA.TABLES
+select * from Productos
 
-   
+INSERT INTO Productos (ProductoID, ProductoTitulo, ProductoDescripcion, ProductoPrecioc2222)
+VALUES ('1', 'Hunter x Hunter', 'Anime hxh in japan', '10');
+
+
+SET IDENTITY_INSERT [dbo].[Productos] ON

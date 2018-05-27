@@ -40,6 +40,10 @@ Borrar Base de datos
 ```sql
 DROP DATABASE ExampleNameDataBase;
 ```
+Listar Todas las tablas de una Base de Datos
+```sql
+select * from INFORMATION_SCHEMA.TABLES
+```
 
 Crear Tabla
 ```sql
@@ -80,3 +84,14 @@ Elimina todos los registro de la tabla
 ```sql
 TRUNCATE TABLE table_name;
 ```
+
+***************************
+/* Turn Identity Insert ON so records can be inserted in the Identity Column  */
+SET IDENTITY_INSERT [dbo].[TableName] ON
+GO
+INSERT INTO [dbo].[TableName] ( [ID], [Name] )
+VALUES ( 2, 'InsertName')
+GO
+/* Turn Identity Insert OFF  */
+SET IDENTITY_INSERT [dbo].[TableName] OFF
+GO

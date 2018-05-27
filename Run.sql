@@ -16,8 +16,9 @@ DROP COLUMN column_name;
 select * from INFORMATION_SCHEMA.TABLES
 select * from Productos
 
-INSERT INTO Productos (ProductoID, ProductoTitulo, ProductoDescripcion, ProductoPrecioc2222)
+INSERT INTO Productos (ProductoID, ProductoTitulo, ProductoDescripcion, ProductoPrecio)
 VALUES ('1', 'Hunter x Hunter', 'Anime hxh in japan', '10');
 
 
 SET IDENTITY_INSERT [dbo].[Productos] ON
+DROP DATABASE DigitalShop

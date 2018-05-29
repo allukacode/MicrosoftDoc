@@ -6,7 +6,12 @@ namespace Linq
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var ThisQuery =
+                from StringValue
+                in QueryString
+                select StringValue;
+            
+            String[] QueryString ={ “One”, “Two”, “Three”, “Four”, “Five” };
         }
     }
 }

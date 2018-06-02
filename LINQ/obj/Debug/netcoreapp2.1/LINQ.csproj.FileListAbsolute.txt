@@ -1,0 +1,11 @@
+C:\GitHub\MicrosoftDoc\LINQ\bin\Debug\netcoreapp2.1\LINQ.deps.json
+C:\GitHub\MicrosoftDoc\LINQ\bin\Debug\netcoreapp2.1\LINQ.runtimeconfig.json
+C:\GitHub\MicrosoftDoc\LINQ\bin\Debug\netcoreapp2.1\LINQ.runtimeconfig.dev.json
+C:\GitHub\MicrosoftDoc\LINQ\bin\Debug\netcoreapp2.1\LINQ.dll
+C:\GitHub\MicrosoftDoc\LINQ\bin\Debug\netcoreapp2.1\LINQ.pdb
+C:\GitHub\MicrosoftDoc\LINQ\obj\Debug\netcoreapp2.1\LINQ.csprojAssemblyReference.cache
+C:\GitHub\MicrosoftDoc\LINQ\obj\Debug\netcoreapp2.1\LINQ.csproj.CoreCompileInputs.cache
+C:\GitHub\MicrosoftDoc\LINQ\obj\Debug\netcoreapp2.1\LINQ.AssemblyInfoInputs.cache
+C:\GitHub\MicrosoftDoc\LINQ\obj\Debug\netcoreapp2.1\LINQ.AssemblyInfo.cs
+C:\GitHub\MicrosoftDoc\LINQ\obj\Debug\netcoreapp2.1\LINQ.dll
+C:\GitHub\MicrosoftDoc\LINQ\obj\Debug\netcoreapp2.1\LINQ.pdb

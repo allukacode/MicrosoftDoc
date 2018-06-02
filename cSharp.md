@@ -105,7 +105,8 @@ namespace _Debug
 
 
 
-
+ los parámetros aparecen en la definición del procedimiento, 
+ los argumentos aparecen en los llamados a procedimientos.
 
 
 

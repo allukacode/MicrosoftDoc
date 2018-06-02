@@ -1,9 +1,41 @@
-
-
-
-
-Documentacion basica c#
+#Documentacion basica c#
 ========================
+
+#Indice
+========================
+1. First list item
+     - First nested list item
+       - Second nested list item
+2. Ciclos
+    - 2.1 For
+3. qwdqwdqwd
+4. qasdasd
+
+# Generics (Genéricos)
+========================
+
+Los genéricos se han agregado a la versión 2.0 del lenguaje C# y Common Language Runtime (CLR). Los genéricos introducen en .NET Framework el concepto de parámetros de tipo, lo que le permite diseñar clases y métodos que aplazan la especificación de uno o varios tipos hasta que el código de cliente declare y cree una instancia de la clase o el método. Por ejemplo, al usar un parámetro de tipo genérico T puede escribir una clase única que otro código de cliente puede usar sin incurrir en el costo o riesgo de conversiones en tiempo de ejecución u operaciones de conversión boxing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 GitHub.com utiliza su propia versión de sintaxis Markdown que provee un
 conjunto de características adicionales, muchas de ellas para hacer más fácil

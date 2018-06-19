@@ -1,4 +1,4 @@
-#Documentacion basica c#
+#Documentación C# en Español
 ========================
 
 #Indice
@@ -11,123 +11,83 @@
 3. qwdqwdqwd
 4. qasdasd
 
-# Generics (Genéricos)
+# 
+========================
+
+```csharp
+using System;
+class Program
+{
+    static void Main()
+    {
+        // los argumentos se encuentran ubicados en la definición de un procedimientos.
+        int Argumento1 = 5, Argumento2 = 5;
+        Console.WriteLine(OperacionSumar(Argumento1,Argumento2));
+
+        // los parámetros se encuentran ubicados en la definición del procedimiento, 
+        int OperacionSumar(int Parametro1, int Parametro2)
+        {
+            int a = Parametro1;
+            int b = Parametro2;
+            return a + b;
+        }
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+-----------------------------wefwefwefwef-------------
+
+
+
+
+
+
+# Genéricos (Generics) 
 ========================
 
 Los genéricos se han agregado a la versión 2.0 del lenguaje C# y Common Language Runtime (CLR). Los genéricos introducen en .NET Framework el concepto de parámetros de tipo, lo que le permite diseñar clases y métodos que aplazan la especificación de uno o varios tipos hasta que el código de cliente declare y cree una instancia de la clase o el método. Por ejemplo, al usar un parámetro de tipo genérico T puede escribir una clase única que otro código de cliente puede usar sin incurrir en el costo o riesgo de conversiones en tiempo de ejecución u operaciones de conversión boxing
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-GitHub.com utiliza su propia versión de sintaxis Markdown que provee un
-conjunto de características adicionales, muchas de ellas para hacer más fácil
-trabajar con el contenido en GitHub.com
+Clase Generica 
+Cuando definimos una nueva clase, debemos conocer el tipo de dato con el que trabajaremos. Si queremos realizar una operación específica dentro de esta nueva clase, sea cual sea el tipo de datos que va a recibir, podemos hacer uso de los tipos genéricos. Este tipo genérico asumirá el tipo de dato que realmente le pasaremos a la clase.
 ```csharp
-int x = 10;
-```
+using System;
 
-
-## Lista  ##
-
-El estándar Markdown convierte el texto que comienza con cuatros espacios en
-cada línea en un bloque de código; GFM también soporta bloques de código. Sólo
-encierra tu código en ```` ``` ```` (como se muestra enseguida) y no necesitarás
-```csharp
-var NombreString = new List<string>();
-NombreString.Add("AllukaCode");
-NombreString.Add("KennyS");
-NombreString.Add("Faker");
-NombreString.Add("Hisoka");
-NombreString.Add("Kakashi");
-
-foreach (var xLocalVariable in NombreString)
-{
-    Console.Write(xLocalVariable + " ");
-}
-```
-Atributos:
-Remove
-```csharp
-salmons.Remove("coho");
-```
-
-
-Interfaces
-Herencia de una clase para implementar sus metodos
-
-[public] {tipo de retorno} {nombre del método}([parámetros]);
-```csharp
-public int CalcularPromedio(int nota1, int nota2, int nota3);
-```
-
-
-
-
-
-```csharp
-namespace _Debug
+namespace CSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            IManejoDeDatos operacion = new  Cliente();
-            operacion.ActualisarRegistro(2548);
-            operacion.BuscarRegistro(0144);
-            Console.ReadLine();
-        }
-    }
-}
+            var intGenerico = new MiClaseGenerica<int>(10);
+            var val = intGenerico.MiMetodoGenerico(200);
 
-namespace _Debug
-{
-    public class Cliente : IManejoDeDatos
-    {
-        public void ActualisarRegistro(int idcliente)
+            var stringGenerico = new MiClaseGenerica<string>("HOLA");
+            stringGenerico.MiMetodoGenerico("Como Estas");
+        }
+        class MiClaseGenerica<T>
         {
-            // Logica Para actualizar el registro 
-            // enviado por paramaetro
-        }
+            private T valorGenerico;
+            public MiClaseGenerica(T valor)
+            {
+                valorGenerico = valor;
+            }
 
-        public void BuscarRegistro(int idcliente)
-        {
-            // Logica Para Buscar los datos del registro 
-            // enviado por paramaetro
-        }
+            public T MiMetodoGenerico(T parametroGenerico)
+            {
+                Console.WriteLine(valorGenerico);
+                Console.WriteLine(parametroGenerico);
 
-        public void EliminarRegistro(int idcliente)
-        {
-            // Logica Para eliminar el registro 
-            // enviado por paramaetro
+                return valorGenerico;
+            }
         }
-    }
-}
-
-namespace _Debug
-{
-    public interface IManejoDeDatos
-    {
-        void ActualisarRegistro(int idcliente);
-        void EliminarRegistro(int idcliente);
-        void BuscarRegistro(int idcliente);
     }
 }
 
@@ -137,8 +97,13 @@ namespace _Debug
 
 
 
- los parámetros aparecen en la definición del procedimiento, 
- los argumentos aparecen en los llamados a procedimientos.
+
+
+
+
+
+
+
 
 
 
